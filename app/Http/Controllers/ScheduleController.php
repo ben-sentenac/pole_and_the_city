@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\CourseSchedule;
+use App\Models\Schedule;
 use Illuminate\Http\Request;
 
-class CourseScheduleController extends Controller
+class ScheduleController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -34,7 +34,7 @@ class CourseScheduleController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(CourseSchedule $courseSchedule)
+    public function show(Schedule $schedule)
     {
         //
     }
@@ -42,7 +42,7 @@ class CourseScheduleController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(CourseSchedule $courseSchedule)
+    public function edit(Schedule $schedule)
     {
         //
     }
@@ -50,7 +50,7 @@ class CourseScheduleController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, CourseSchedule $courseSchedule)
+    public function update(Request $request, Schedule $schedule)
     {
         //
     }
@@ -58,7 +58,7 @@ class CourseScheduleController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(CourseSchedule $courseSchedule)
+    public function destroy(Schedule $schedule)
     {
         //
     }

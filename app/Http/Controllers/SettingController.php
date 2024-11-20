@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\GalleryImage;
+use App\Models\Setting;
 use Illuminate\Http\Request;
 
-class GalleryImageController extends Controller
+class SettingController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -34,7 +34,7 @@ class GalleryImageController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(GalleryImage $galleryImage)
+    public function show(Setting $setting)
     {
         //
     }
@@ -42,7 +42,7 @@ class GalleryImageController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(GalleryImage $galleryImage)
+    public function edit(Setting $setting)
     {
         //
     }
@@ -50,7 +50,7 @@ class GalleryImageController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, GalleryImage $galleryImage)
+    public function update(Request $request, Setting $setting)
     {
         //
     }
@@ -58,7 +58,7 @@ class GalleryImageController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(GalleryImage $galleryImage)
+    public function destroy(Setting $setting)
     {
         //
     }
