@@ -6,5 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Event extends Model
 {
-    //
+    protected $fillable = ['title', 'description', 'start_time', 'end_time', 'location'];
+
+    public function schedules()
+    {
+        return $this->hasMany(Schedule::class);
+    }
 }

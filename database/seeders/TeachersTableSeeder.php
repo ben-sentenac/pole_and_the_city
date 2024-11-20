@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Teacher;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -13,12 +14,23 @@ class TeachersTableSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('teachers')->insert([
-            ['name' => 'Alice Teacher', 'bio' => 'Experienced pole dance instructor.', 'profile_picture_url' => 'https://example.com/alice.jpg'],
-            ['name' => 'Bob Teacher', 'bio' => 'Specializes in strength training for pole dancers.', 'profile_picture_url' => 'https://example.com/bob.jpg'],
-            ['name' => 'Charlie Teacher', 'bio' => 'Focuses on flexibility and acrobatics.', 'profile_picture_url' => 'https://example.com/charlie.jpg'],
-            ['name' => 'Dan Teacher', 'bio' => 'Passionate about beginner-friendly pole routines.', 'profile_picture_url' => 'https://example.com/dan.jpg'],
-            ['name' => 'Ella Teacher', 'bio' => 'Expert in advanced choreography and technique.', 'profile_picture_url' => 'https://example.com/ella.jpg'],
+        Teacher::insert([
+            [
+                'name' => 'Jane Doe',
+                'photo' => 'teachers/jane.jpg',
+                'specialization' => 'Pole Dance Basics',
+                'bio' => 'Jane has over 10 years of experience teaching beginners.',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'name' => 'John Smith',
+                'photo' => 'teachers/john.jpg',
+                'specialization' => 'Advanced Tricks',
+                'bio' => 'John is known for his innovative and challenging pole routines.',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
         ]);
     }
 }

@@ -18,12 +18,11 @@ class DatabaseSeeder extends Seeder
         $this->call([
             TeachersTableSeeder::class,
             CoursesTableSeeder::class,
-            CourseSchedulesTableSeeder::class,
+            SchedulesTableSeeder::class,
             PagesTableSeeder::class,
-            PostsTableSeeder::class,
-            ImagesTableSeeder::class,
-            GalleriesTableSeeder::class,
-            GalleryImagesTableSeeder::class,
+            SettingsTableSeeder::class,
+            MediasTableSeeder::class,
+            EventsTableSeeder::class,
         ]);
     }
 }
